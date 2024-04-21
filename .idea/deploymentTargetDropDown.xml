@@ -2,11 +2,27 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="LoginSignupPage">
+        <State />
+      </entry>
       <entry key="app">
         <State />
       </entry>
       <entry key="splash_screen">
-        <State />
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\Noscript\.android\avd\moto_z2_play_API_26.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-20T22:35:41.065954900Z" />
+        </State>
       </entry>
     </value>
   </component>
