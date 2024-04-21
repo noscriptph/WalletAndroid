@@ -35,3 +35,5 @@ Esta semana nos toco como meta recrear estas dos ventanas y mantener las relacio
 ## Aplicacion ejecutandose desde celular
 
 ![alt text](image-8.png)
+
+![alt text](image-9.png)
