@@ -3,4 +3,8 @@
     <string name="textview">TextView</string>
     <string name="appName">AlkeWallet</string>
     <string name="alkewallet">Alkewallet</string>
+    <string name="banner_login_page1">Loguea y empeza a</string>
+    <string name="banner_login_page2">transferir!</string>
+    <string name="texto_cuadro_solicitud_email">Email</string>
+    <string name="pista_cuadro_rellenar_email">Ingresa tu email</string>
 </resources>
