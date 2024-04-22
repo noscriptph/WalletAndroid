@@ -4,8 +4,11 @@ La idea de este de este ejercicio es que primero conozcamos la interfas de Andro
 
 Se nos entrego un proyecto en la web Figma, esta web guarda las vistas de la aplicacion con medidas en pixeles, se me ocurrio hacer coincidir el lienzo de la pantalla en Android Studio con el lienzo de Figma para evitar hacer coincidir las relaciones que indica esta web vs dp que es la medida utilizada en el IDE.
 
+![alt text](image-13.png)
+
 ![alt text](image.png)
 
+![alt text](image-14.png)
 Luego de esto selecciono en la vista de edicion a este disposivo virtual para que muestre el lienzo.
 
 ![alt text](image-1.png)
