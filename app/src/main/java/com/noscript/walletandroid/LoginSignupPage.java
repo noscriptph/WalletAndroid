@@ -24,7 +24,7 @@ public class LoginSignupPage extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login_signup_page);
        TextView textView = findViewById(R.id.textView2);
-        textView.setOnClickListener(v -> {
+       textView.setOnClickListener(v -> {
             Vibrator vibrator =(Vibrator)getSystemService(VIBRATOR_SERVICE);
             if(vibrator!=null){
                 vibrator.vibrate(40);
