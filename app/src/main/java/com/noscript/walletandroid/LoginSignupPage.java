@@ -3,6 +3,7 @@ package com.noscript.walletandroid;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -14,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class LoginSignupPage extends AppCompatActivity {
 
-    Button btn1;
+
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
@@ -24,6 +25,10 @@ public class LoginSignupPage extends AppCompatActivity {
         setContentView(R.layout.activity_login_signup_page);
        TextView textView = findViewById(R.id.textView2);
         textView.setOnClickListener(v -> {
+            Vibrator vibrator =(Vibrator)getSystemService(VIBRATOR_SERVICE);
+            if(vibrator!=null){
+                vibrator.vibrate(40);
+            }
           Intent intent = new Intent(this, LoginPage.class)  ;
           startActivity(intent);
         });
