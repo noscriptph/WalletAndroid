@@ -77,7 +77,8 @@
         android:inputType="textPassword"
         android:textColorHint="#A1887F"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
@@ -87,7 +88,7 @@
         android:fontFamily="@font/jua_regular"
         android:text="@string/contrase_a"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress" />
 
     <TextView
         android:id="@+id/textView8"

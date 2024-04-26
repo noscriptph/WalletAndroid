@@ -15,4 +15,25 @@
     <string name="login">Login</string>
     <string name="ya_tiene_cuenta">Ya tiene cuenta?</string>
     <string name="crear_cuenta_nueva">Crear cuenta nueva</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registrarse_y">Registrarse y</string>
+    <string name="empezar_a_transferir">empezar a transferir</string>
+    <string name="nombre">Nombre</string>
+    <string name="ingresar_nombre">Ingresar nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="ingresar_apellido">Ingresar apellido</string>
+    <string name="email">Email</string>
+    <string name="ingresar_email">Ingresar Email</string>
+    <string name="ingresar_contrase_a">Ingresar contraseña</string>
+    <string name="reingresar_contrase_a">Reingresar contraseña</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="ya_tienes_una_cuenta">Ya tienes una cuenta?</string>
+    <string name="ingresar_dinero">ingresar Dinero</string>
+    <string name="reem_khaled">Reem Khaled</string>
+    <string name="reem_1993_gmail_com">reem_1993@gmail.com</string>
+    <string name="cantidad_a_ingresa">Cantidad a ingresa</string>
+    <string name="notas_de_transferencia">Notas de transferencia</string>
+    <string name="agregar_notas_de_transferencia_opcional">Agregar notas de transferencia(opcional)</string>
+    <string name="_20_00">20.00</string>
 </resources>

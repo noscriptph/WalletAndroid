@@ -10,11 +10,6 @@ import android.view.ViewGroup;
 
 import com.noscript.walletandroid.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link menu#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class menu extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
