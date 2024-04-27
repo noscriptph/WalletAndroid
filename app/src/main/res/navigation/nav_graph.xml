@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             android:id="@+id/nav_graph">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginSingupPage">
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.noscript.walletandroid.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.noscript.walletandroid.Fragments.SplashScreen"
+        android:label="SplashScreen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreen_to_loginSingupPage"
+            app:destination="@id/loginSingupPage"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginSingupPage"
+        android:name="com.noscript.walletandroid.Fragments.LoginSingupPage"
+        android:label="LoginSingupPage"
+        tools:layout="@layout/fragment_login_singup_page">
+        <action
+            android:id="@+id/action_loginSingupPage_to_loginPage"
+            app:destination="@id/loginPage"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_loginSingupPage_to_singupPage"
+            app:destination="@id/singupPage"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.noscript.walletandroid.Fragments.LoginPage"
+        android:label="LoginPage"
+        tools:layout="@layout/fragment_login_page">
+        <action
+            android:id="@+id/action_loginPage_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_loginPage_to_loginSingupPage2"
+            app:destination="@id/loginSingupPage"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/singupPage"
+        android:name="com.noscript.walletandroid.Fragments.SingupPage"
+        android:label="SingupPage"
+        tools:layout="@layout/fragment_singup_page">
+        <action
+            android:id="@+id/action_singupPage_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_singupPage_to_loginSingupPage"
+            app:destination="@id/loginSingupPage"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.noscript.walletandroid.Fragments.HomePage"
+        android:label="HomePage"
+        tools:layout="@layout/fragment_home_page">
+        <action
+            android:id="@+id/action_homePage_to_loginSingupPage"
+            app:destination="@id/loginSingupPage"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
 </navigation>

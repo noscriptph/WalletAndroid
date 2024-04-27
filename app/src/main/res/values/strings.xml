@@ -36,4 +36,6 @@
     <string name="notas_de_transferencia">Notas de transferencia</string>
     <string name="agregar_notas_de_transferencia_opcional">Agregar notas de transferencia(opcional)</string>
     <string name="_20_00">20.00</string>
+    <string name="_124_57">$124.57</string>
+    <string name="enviar_dinero">Enviar Dinero</string>
 </resources>
