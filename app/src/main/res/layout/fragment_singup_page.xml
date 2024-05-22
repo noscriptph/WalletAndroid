@@ -1,211 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:scaleType="centerCrop"
-    tools:context="Fragments.SingupPage">
+    tools:context=".vista.Fragments.SingupPage">
 
-    <ImageView
-        android:id="@+id/background_image"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:scaleType="fitStart"
-        android:src="@drawable/bg_login"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="80dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="@string/registrarse_y"
-        android:textSize="32sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/background_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/bg_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jua_regular"
-        android:text="@string/empezar_a_transferir"
-        android:textSize="32sp"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/registrarse_y"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="224dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="@string/nombre"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/empezar_a_transferir"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="315dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="253dp"
-        android:layout_marginEnd="30dp"
-        android:inputType="text"
-        android:text="@string/ingresar_nombre"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        android:autofillHints="Ingrese su nombre"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/nombre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="302dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="@string/apellido"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:inputType="text"
+            android:hint="@string/ingresar_nombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            tools:ignore="LabelFor" />
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="315dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="331dp"
-        android:layout_marginEnd="30dp"
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/apellido"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
 
-        android:fontFamily="@font/jua_regular"
-        android:inputType="text"
-        android:text="@string/ingresar_apellido"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor"
-        android:autofillHints="" />
+        <EditText
+            android:id="@+id/editTextApellido"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/jua_regular"
+            android:inputType="text"
+            android:hint="@string/ingresar_apellido"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            tools:ignore="LabelFor" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="384dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="@string/email"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:fontFamily="@font/jua_regular" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextApellido"
+            tools:fontFamily="@font/jua_regular" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="315dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="413dp"
-        android:ems="10"
-        android:fontFamily="@font/jua_regular"
-        android:hint="@string/ingresar_email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/editTextEmailAddress"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/jua_regular"
+            android:hint="@string/ingresar_email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="466dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="@string/contrase_a"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/contrase_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="315dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="495dp"
-        android:ems="10"
-        android:fontFamily="@font/jua_regular"
-        android:hint="@string/ingresar_contrase_a"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/jua_regular"
+            android:hint="@string/ingresar_contrase_a"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="549dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="@string/reingresar_contrase_a"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/reingresar_contrase_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword3"
-        android:layout_width="315dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="578dp"
-        android:ems="10"
-        android:fontFamily="@font/jua_regular"
-        android:hint="@string/reingresar_contrase_a"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
+        <EditText
+            android:id="@+id/editTextReingresarPassword"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/jua_regular"
+            android:hint="@string/reingresar_contrase_a"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="315dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="686dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/signup_button" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextReingresarPassword"
+            app:srcCompat="@drawable/signup_button" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jua_regular"
-        android:text="@string/crear_cuenta"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/crear_cuenta"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="759dp"
-        android:layout_marginEnd="116dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="@string/ya_tienes_una_cuenta"
-        android:textColor="#1A86DC"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textViewYaTienesCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/ya_tienes_una_cuenta"
+            android:textColor="#1A86DC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

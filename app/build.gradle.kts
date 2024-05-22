@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
+    alias(libs.plugins.jetbrainsKotlinAndroid)
 }
 
 android {
@@ -29,10 +30,19 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
-
+    implementation(libs.moshi.kotlin)
+    implementation (libs.retrofit)
+    implementation (libs.navigation.fragment.ktx)
+    implementation (libs.navigation.ui.ktx)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
     implementation(libs.appcompat)
@@ -40,6 +50,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.filament.android)
+    implementation(libs.core.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
