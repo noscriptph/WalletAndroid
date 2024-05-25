@@ -1,4 +1,4 @@
-package com.noscript.walletandroid.vista.Fragments
+package com.noscript.walletandroid.vista.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

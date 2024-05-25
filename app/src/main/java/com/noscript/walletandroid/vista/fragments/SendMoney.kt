@@ -1,4 +1,4 @@
-package com.noscript.walletandroid.vista.Fragments
+package com.noscript.walletandroid.vista.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,10 +9,10 @@ import com.noscript.walletandroid.R
 
 /**
  * A simple [Fragment] subclass.
- * Use the [RequestMoney.newInstance] factory method to
+ * Use the [SendMoney.newInstance] factory method to
  * create an instance of this fragment.
  */
-class RequestMoney : Fragment() {
+class SendMoney : Fragment() {
     // TODO: Rename and change types of parameters
     private var mParam1: String? = null
     private var mParam2: String? = null
@@ -30,7 +30,7 @@ class RequestMoney : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_request_money, container, false)
+        return inflater.inflate(R.layout.fragment_send_money, container, false)
     }
 
     companion object {
@@ -45,11 +45,11 @@ class RequestMoney : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment RequestMoney.
+         * @return A new instance of fragment SendMoney.
          */
         // TODO: Rename and change types and number of parameters
-        fun newInstance(param1: String?, param2: String?): RequestMoney {
-            val fragment = RequestMoney()
+        fun newInstance(param1: String?, param2: String?): SendMoney {
+            val fragment = SendMoney()
             val args = Bundle()
             args.putString(ARG_PARAM1, param1)
             args.putString(ARG_PARAM2, param2)
