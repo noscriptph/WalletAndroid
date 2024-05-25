@@ -85,3 +85,7 @@ falta logica que exija solo letras (para todo excepto la contraseña) y que se v
 
 Todos los avisos y comprovaciones preferi hacerlos por Toast ya que asi no debo modificar los fragments
 
+Respecto a LoginPage.kt se implemento que no se permita iniciar sesion si alguno de los campos esta vacio, esto previene que al abrir la aplicacion sin ningun dato cargado en Usuario.kt se pueda iniciar sesion, ya que seria comprobar que nada sea igual a nada u por ende pasaria al home facilmente.
+
+![alt text](image-24.png)
+
