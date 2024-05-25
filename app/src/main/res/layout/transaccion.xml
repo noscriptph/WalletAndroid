@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/imageViewProfilePicture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/pp4"
+        android:contentDescription="@string/profile_picture" />
+
+    <!-- Send Icon (Visible) -->
+    <ImageView
+        android:id="@+id/imageViewSendIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@id/imageViewProfilePicture"
+        app:layout_constraintTop_toTopOf="@id/imageViewProfilePicture"
+        app:srcCompat="@drawable/send_icon"
+        android:visibility="visible"
+        android:contentDescription="@string/send_icon" />
+
+    <!-- Request Icon (Hidden) -->
+    <ImageView
+        android:id="@+id/imageViewRequestIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@id/imageViewProfilePicture"
+        app:layout_constraintTop_toTopOf="@id/imageViewProfilePicture"
+        app:srcCompat="@drawable/request_icon"
+        android:visibility="gone"
+        android:contentDescription="@string/request_icon" />
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:fontFamily="@font/jua_regular"
+        android:text="Reem Khaled"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@id/imageViewProfilePicture"
+        app:layout_constraintTop_toTopOf="@id/imageViewProfilePicture" />
+
+    <!-- Transaction Time -->
+    <TextView
+        android:id="@+id/textViewTransactionTime"
+        android:layout_width="87dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/jua_regular"
+        android:text="Oct 07, 09:10PM"
+        android:textColor="#A2A2A2"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/imageViewProfilePicture"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserName" />
+
+    <!-- Transaction Amount -->
+    <TextView
+        android:id="@+id/textViewTransactionAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/jua_regular"
+        android:text="-$21.30"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

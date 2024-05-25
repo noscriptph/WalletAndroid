@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.fragment.NavHostFragment
 import com.noscript.walletandroid.R
 import com.noscript.walletandroid.databinding.ActivityMainBinding
+import com.noscript.walletandroid.vistaModelo.Usuario
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Inicializar usuario por defecto si es necesario
+        Usuario.inicializarUsuarioPorDefecto(this)
 
         this.enableEdgeToEdge()
 
@@ -52,4 +55,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-

@@ -30,6 +30,15 @@ data class Usuario(
         private const val KEY_MONTO_DINERO = "monto_dinero"
         private const val KEY_SESION_INICIADA = "sesion_iniciada"
 
+        private val usuarioPorDefecto = Usuario(
+            nombre = "user",
+            apellido = "admin",
+            email = "user",
+            contrasena = "admin",
+            montoDinero = 100000.0,
+            sesionIniciada = false
+        )
+
         /**
          * Método estático para guardar los datos de un usuario en SharedPreferences.
          *
@@ -62,7 +71,24 @@ data class Usuario(
             val contrasena = prefs.getString(KEY_CONTRASENA, "") ?: ""
             val montoDinero = prefs.getFloat(KEY_MONTO_DINERO, 0f).toDouble()
             val sesionIniciada = prefs.getBoolean(KEY_SESION_INICIADA, false)
-            return Usuario(nombre, apellido, email, contrasena, montoDinero, sesionIniciada)
+
+            return if (nombre.isEmpty() && email.isEmpty() && contrasena.isEmpty()) {
+                usuarioPorDefecto
+            } else {
+                Usuario(nombre, apellido, email, contrasena, montoDinero, sesionIniciada)
+            }
+        }
+
+        /**
+         * Método estático para inicializar un usuario por defecto si no existe ninguno.
+         *
+         * @param context El contexto de la aplicación.
+         */
+        fun inicializarUsuarioPorDefecto(context: Context) {
+            val prefs: SharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            if (!prefs.contains(KEY_EMAIL)) {
+                guardarUsuario(context, usuarioPorDefecto)
+            }
         }
     }
 }
