@@ -18,11 +18,11 @@ class UsuarioViewModel : ViewModel() {
      */
     init {
         usuario.value = Usuario(
-            nombre = "", // Nombre del usuario, inicialmente vacío.
-            apellido = "", // Apellido del usuario, inicialmente vacío.
-            email = "", // Correo electrónico del usuario, inicialmente vacío.
-            contrasena = "", // Contraseña del usuario, inicialmente vacía.
-            montoDinero = 0.0, // Monto de dinero en la cuenta del usuario, inicialmente 0.0.
+            nombre = "user", // Nombre del usuario, inicialmente vacío.
+            apellido = "user", // Apellido del usuario, inicialmente vacío.
+            email = "admin", // Correo electrónico del usuario, inicialmente vacío.
+            contrasena = "admin", // Contraseña del usuario, inicialmente vacía.
+            montoDinero = 100000.0, // Monto de dinero en la cuenta del usuario, inicialmente 0.0.
             sesionIniciada = false // Estado de la sesión del usuario, inicialmente no iniciada.
         )
     }

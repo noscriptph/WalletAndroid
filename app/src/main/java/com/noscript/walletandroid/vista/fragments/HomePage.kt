@@ -43,7 +43,7 @@ class HomePage : Fragment() {
         usuarioViewModel.usuario.observe(viewLifecycleOwner) { usuario ->
             // Actualizar la interfaz de usuario con los datos del usuario
             binding.textView21.text = usuario.nombre
-            binding.textView23.text = String.format("$%.2f", usuario.montoDinero)
+            binding.textView23.text = String.format("$%.2f", usuario.montoDinero) // Actualizando con el valor de la cuenta
         }
     }
 
