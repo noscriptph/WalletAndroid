@@ -43,6 +43,12 @@ Esta semana nos toco como meta recrear estas dos ventanas y mantener las relacio
 
 ## TAREA INTEGRADORA 5
 
+nota:se agrego un usuario y contraseña por defecto, si es para revisar no es necesario realizar el registro dentro de la aplicacion, de todas formas tambien sirve la ventana de registro
+correo user
+contraseña admin
+
+se puede utilizar la tecla enter en el campo de contraseña, se agrego un listener para permitir esa funcion
+
 A continuacion indicare todo lo que fue implementado en esta etapa del wallet para permitir una facil revision de la misma.
 
 Agregue un directorio llamado vistaModelo para manejar los datos locales del usuario que cree su cuenta y utilice la aplicacion.
@@ -89,3 +95,14 @@ Respecto a LoginPage.kt se implemento que no se permita iniciar sesion si alguno
 
 ![alt text](image-24.png)
 
+tambien se agrego logica que oculta el texto y el simbolo de no existen transacciones disponibles, y solo muestra informacion dentro del reciclerview, en caso de borrar todas las transacciones y dejar vacio el reciclerview se muestran estos dos elementos en la pantalla
+
+![alt text](image-25.png)
+
+se creo un fragmento para ser utilizado en el reciclerview, cuenta con los iconos de envio y recepcion, estos se activan dependiendo de que se indica en transacciones
+
+![alt text](image-26.png)
+
+respecto al modelo intente mantener el codigo lo mas organizado en distintas carpetas, los nombres de los archivos son descriptivos para que sean facilmente identificables, ademas, inclui carpetas para agregar el uso de api en caso de ser necesario en un futuro
+
+![alt text](image-27.png)
