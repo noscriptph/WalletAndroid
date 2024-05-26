@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="@id/imageViewProfilePicture"
         app:layout_constraintTop_toTopOf="@id/imageViewProfilePicture"
         app:srcCompat="@drawable/send_icon"
-        android:visibility="visible"
+        android:visibility="gone"
         android:contentDescription="@string/send_icon" />
 
     <!-- Request Icon (Hidden) -->
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toTopOf="@id/imageViewProfilePicture"
         app:srcCompat="@drawable/request_icon"
         android:visibility="gone"
-        android:contentDescription="@string/request_icon" />
+        android:contentDescription="@string/recepcion_icon" />
 
     <!-- User Name -->
     <TextView

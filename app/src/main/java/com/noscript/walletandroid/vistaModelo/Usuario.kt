@@ -2,6 +2,8 @@ package com.noscript.walletandroid.vistaModelo
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.util.Log
+
 
 /**
  * Clase que representa a un usuario de la aplicación.
@@ -72,7 +74,10 @@ data class Usuario(
             val montoDinero = prefs.getFloat(KEY_MONTO_DINERO, 0f).toDouble()
             val sesionIniciada = prefs.getBoolean(KEY_SESION_INICIADA, false)
 
+            android.util.Log.d("Usuario", "Obteniendo usuario: $nombre, $email")
+
             return if (nombre.isEmpty() && email.isEmpty() && contrasena.isEmpty()) {
+                android.util.Log.d("Usuario", "Retornando usuario por defecto")
                 usuarioPorDefecto
             } else {
                 Usuario(nombre, apellido, email, contrasena, montoDinero, sesionIniciada)
@@ -87,8 +92,12 @@ data class Usuario(
         fun inicializarUsuarioPorDefecto(context: Context) {
             val prefs: SharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
             if (!prefs.contains(KEY_EMAIL)) {
+                Log.d("Usuario", "Inicializando usuario por defecto")
                 guardarUsuario(context, usuarioPorDefecto)
+            } else {
+                Log.d("Usuario", "Usuario ya existe, no se inicializa por defecto")
             }
         }
+
     }
 }

@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:scaleType="centerCrop"
-    tools:context=".vista.fragments.LoginPage">
+    android:scaleType="centerCrop">
 
     <ImageView
         android:id="@+id/background_image"
@@ -42,45 +41,36 @@
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <EditText
-        android:id="@+id/editTextEmailAddress"
-        android:layout_width="315dp"
-        android:layout_height="49dp"
-        android:autofillHints="Ingresa tu email"
-        android:ems="10"
-        android:hint="@string/pista_cuadro_rellenar_email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:ignore="MissingConstraints" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="286dp"
+        android:layout_marginTop="244dp"
         android:layout_marginEnd="314dp"
+        android:layout_marginBottom="471dp"
         android:fontFamily="@font/jua_regular"
         android:text="@string/texto_cuadro_solicitud_email"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/editTextEmailAddress"
         android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:autofillHints="minimo 10 caracteres, letras simbolos y numeros"
+        android:layout_height="49dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints="Ingresa tu email"
         android:ems="10"
-        android:hint="@string/ingresa_tu_contrasenia"
-        android:inputType="textPassword"
-        android:textColorHint="#A1887F"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="@+id/editTextEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        tools:ignore="TouchTargetSizeCheck" />
+        android:hint="@string/pista_cuadro_rellenar_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView7"
@@ -89,19 +79,38 @@
         android:fontFamily="@font/jua_regular"
         android:text="@string/contrase_a"
         app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextEmailAddress" />
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints="minimo 10 caracteres, letras simbolos y numeros"
+        android:ems="10"
+        android:hint="@string/ingresa_tu_contrasenia"
+        android:inputType="textPassword"
+        android:textColorHint="#A1887F"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/background_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView7" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="326dp"
+        android:layout_marginTop="442dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="272dp"
         android:fontFamily="@font/jua_regular"
         android:text="@string/olvidaste_tu_contrase_a"
         android:textColor="#1A87DD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_image"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
@@ -144,10 +153,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-
+        android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
         android:visibility="gone"
         tools:ignore="InvalidId,MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

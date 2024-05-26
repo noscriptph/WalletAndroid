@@ -36,5 +36,7 @@ class UsuarioViewModel : ViewModel() {
         // Asigna el nuevo valor al LiveData de usuario
         usuario.value = usuarioActualizado
     }
+
+
 }
 
