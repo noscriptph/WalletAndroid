@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.noscript.walletandroid.R
 import com.noscript.walletandroid.databinding.FragmentHomePageBinding
 import com.noscript.walletandroid.vistaModelo.UsuarioViewModel
 import com.noscript.walletandroid.vistaModelo.transacciones as listaTransacciones
@@ -34,7 +36,7 @@ class HomePage : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Inicializar el ViewModel del usuario
-        usuarioViewModel = ViewModelProvider(this).get(UsuarioViewModel::class.java)
+        usuarioViewModel = ViewModelProvider(this). get(UsuarioViewModel::class.java)
 
         // Configurar el RecyclerView con las transacciones de ejemplo
         configurarRecyclerView()
@@ -44,6 +46,11 @@ class HomePage : Fragment() {
             // Actualizar la interfaz de usuario con los datos del usuario
             binding.textView21.text = usuario.nombre
             binding.textView23.text = String.format("$%.2f", usuario.montoDinero) // Actualizando con el valor de la cuenta
+        }
+// Configurar OnClickListener para imageView8
+        binding.imageView8.setOnClickListener {
+            // Navegar a SendMoneyFragment usando el ID de la acción
+            findNavController().navigate(R.id.action_homePage_to_sendMoney)
         }
     }
 
