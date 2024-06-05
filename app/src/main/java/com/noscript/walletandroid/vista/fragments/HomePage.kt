@@ -26,8 +26,7 @@ class HomePage : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflar el diseño utilizando ViewBinding
+    ): View {
         binding = FragmentHomePageBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -36,20 +35,19 @@ class HomePage : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Inicializar el ViewModel del usuario
-        usuarioViewModel = ViewModelProvider(this). get(UsuarioViewModel::class.java)
+        usuarioViewModel = ViewModelProvider(this).get(UsuarioViewModel::class.java)
 
         // Configurar el RecyclerView con las transacciones de ejemplo
         configurarRecyclerView()
 
         // Observar cambios en los datos del usuario
         usuarioViewModel.usuario.observe(viewLifecycleOwner) { usuario ->
-            // Actualizar la interfaz de usuario con los datos del usuario
             binding.textView21.text = usuario.nombre
-            binding.textView23.text = String.format("$%.2f", usuario.montoDinero) // Actualizando con el valor de la cuenta
+            binding.textView23.text = String.format("$%.2f", usuario.montoDinero)
         }
-// Configurar OnClickListener para imageView8 para abrir fragment de envio de dinero
+
+        // Configurar OnClickListener para imageView8 para abrir fragment de envio de dinero
         binding.imageView8.setOnClickListener {
-            // Navegar a SendMoneyFragment usando el ID de la acción
             findNavController().navigate(R.id.action_homePage_to_sendMoney)
         }
     }
@@ -80,4 +78,5 @@ class HomePage : Fragment() {
             binding.imageView19.visibility = View.INVISIBLE
         }
     }
+
 }
