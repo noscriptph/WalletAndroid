@@ -53,24 +53,30 @@ class LoginSingupPage : Fragment() {
         }
 
         // Manejo del botón de atrás para evitar volver al splash screen
-        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                if (dobleToqueParaSalir) {
-                    // Si el botón de atrás se presionó dos veces, cerrar la aplicación
-                    requireActivity().finish()
-                    return
+        requireActivity().onBackPressedDispatcher.addCallback(
+            viewLifecycleOwner,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    if (dobleToqueParaSalir) {
+                        // Si el botón de atrás se presionó dos veces, cerrar la aplicación
+                        requireActivity().finish()
+                        return
+                    }
+
+                    // Indicar al usuario que presione nuevamente para salir
+                    dobleToqueParaSalir = true
+                    Toast.makeText(
+                        requireContext(),
+                        "Presiona nuevamente atrás para salir",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                    // Restablecer la variable después de la duración del Toast
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        dobleToqueParaSalir = false
+                    }, Toast.LENGTH_SHORT.toLong()) // Duración del Toast.LENGTH_SHORT es 2000ms
                 }
-
-                // Indicar al usuario que presione nuevamente para salir
-                dobleToqueParaSalir = true
-                Toast.makeText(requireContext(), "Presiona nuevamente atrás para salir", Toast.LENGTH_SHORT).show()
-
-                // Restablecer la variable después de la duración del Toast
-                Handler(Looper.getMainLooper()).postDelayed({
-                    dobleToqueParaSalir = false
-                }, Toast.LENGTH_SHORT.toLong()) // Duración del Toast.LENGTH_SHORT es 2000ms
-            }
-        })
+            })
     }
 
     /**

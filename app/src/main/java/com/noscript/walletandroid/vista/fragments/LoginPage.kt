@@ -36,7 +36,11 @@ class LoginPage : Fragment() {
             val password = binding.editTextPassword.text.toString()
 
             if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(requireContext(), "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "Por favor, completa todos los campos",
+                    Toast.LENGTH_SHORT
+                ).show()
                 return@setOnClickListener
             }
 
@@ -46,10 +50,18 @@ class LoginPage : Fragment() {
                 usuarioGuardado.sesionIniciada = true
                 Usuario.guardarUsuario(requireContext(), usuarioGuardado)
                 usuarioViewModel.usuario.value = usuarioGuardado
-                Toast.makeText(requireContext(), "Sesión iniciada correctamente", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "Sesión iniciada correctamente",
+                    Toast.LENGTH_SHORT
+                ).show()
                 cargarFragmento(HomePage())
             } else {
-                Toast.makeText(requireContext(), "Los datos son incorrectos, inténtalo nuevamente", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "Los datos son incorrectos, inténtalo nuevamente",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
 

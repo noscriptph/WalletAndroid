@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.noscript.walletandroid.R
 import com.noscript.walletandroid.databinding.FragmentSingupPageBinding
 import com.noscript.walletandroid.vistaModelo.UsuarioViewModel
+
 /**
  * Fragmento para la página de registro de usuario.
  */
@@ -55,11 +56,23 @@ class SingupPage : Fragment() {
             val reingresarContrasena = binding.editTextReingresarPassword.text.toString()
 
             if (contrasena.length < 10) {
-                Toast.makeText(requireContext(), "La contraseña debe tener al menos 10 caracteres.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "La contraseña debe tener al menos 10 caracteres.",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else if (contrasena != reingresarContrasena) {
-                Toast.makeText(requireContext(), "Las contraseñas no coinciden.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "Las contraseñas no coinciden.",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else if (nombre.isBlank() || apellido.isBlank() || email.isBlank() || contrasena.isBlank()) {
-                Toast.makeText(requireContext(), "Por favor, rellena todos los campos.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "Por favor, rellena todos los campos.",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else {
                 val usuarioActualizado = usuarioViewModel.usuario.value?.copy(
                     nombre = nombre,

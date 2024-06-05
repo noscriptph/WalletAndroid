@@ -47,7 +47,7 @@ class HomePage : Fragment() {
             binding.textView21.text = usuario.nombre
             binding.textView23.text = String.format("$%.2f", usuario.montoDinero) // Actualizando con el valor de la cuenta
         }
-// Configurar OnClickListener para imageView8
+// Configurar OnClickListener para imageView8 para abrir fragment de envio de dinero
         binding.imageView8.setOnClickListener {
             // Navegar a SendMoneyFragment usando el ID de la acción
             findNavController().navigate(R.id.action_homePage_to_sendMoney)

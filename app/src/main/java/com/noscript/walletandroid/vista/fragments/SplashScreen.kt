@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.noscript.walletandroid.R
 import com.noscript.walletandroid.databinding.FragmentSplashScreenBinding
+
 /**
  * Fragmento que muestra una pantalla de bienvenida (splash screen).
  * Esta pantalla se muestra durante 3 segundos antes de navegar a la página de inicio de sesión.
@@ -18,6 +19,7 @@ class SplashScreen : Fragment() {
 
     // Binding para la vista del fragmento
     private var _binding: FragmentSplashScreenBinding? = null
+
     // Propiedad solo de lectura para acceder al binding de manera segura
     private val binding get() = _binding!!
 
