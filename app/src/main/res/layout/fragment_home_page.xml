@@ -15,6 +15,7 @@
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/background_detail" />
@@ -56,9 +57,9 @@
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="120dp"
-        android:text="Hola, Amanda!"
+        android:text="@string/nombreusuario"
         android:textColor="#B0DAFC"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -110,6 +111,7 @@
         android:layout_marginBottom="14dp"
         android:fontFamily="@font/jua_regular"
         android:text="Enviar Dinero"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
@@ -134,6 +136,7 @@
         android:layout_marginBottom="14dp"
         android:fontFamily="@font/jua_regular"
         android:text="Ingresar dinero"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/imageView9"
         app:layout_constraintEnd_toEndOf="@+id/imageView9"
         app:layout_constraintStart_toStartOf="@+id/imageView9"
@@ -160,6 +163,7 @@
         android:layout_marginTop="113dp"
         android:fontFamily="@font/jua_regular"
         android:text="Últimas Transacciones"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -189,6 +193,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26"
         tools:listitem="@layout/transaccion" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="34dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="30dp"
+        android:text="Hola, "
+        android:textColor="#B0DAFC"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintEnd_toStartOf="@+id/textView21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

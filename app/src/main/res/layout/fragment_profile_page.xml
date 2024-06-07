@@ -1,177 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vista.fragments.ProfilePage">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/help_center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView31" />
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/help_center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView31" />
 
-    <ImageView
-        android:id="@+id/imageView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="15dp"
-        android:src="@drawable/settings"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView30" />
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView30" />
 
-    <ImageView
-        android:id="@+id/imageView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="15dp"
-        android:src="@drawable/my_cards"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/my_cards"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView29" />
 
-    <ImageView
-        android:id="@+id/imageView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="15dp"
-        android:src="@drawable/my_info"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/my_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView24" />
 
-    <ImageView
-        android:id="@+id/imageView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rectangle6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView27"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="137dp"
-        android:layout_marginTop="107dp"
-        android:layout_marginEnd="138dp"
-        android:src="@drawable/profile_picture"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView24" />
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="137dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="138dp"
+            android:src="@drawable/profile_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView24" />
 
-    <ImageView
-        android:id="@+id/imageView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/edit_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView51"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/edit_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView51"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="152dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="Mi perfil"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:textColor="#000000" />
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="152dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Mi perfil"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textColor="#000000" />
 
-    <TextView
-        android:id="@+id/textView52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="134dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="Amanda Alkemy"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="134dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Amanda Alkemy"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView27" />
 
-    <TextView
-        android:id="@+id/textView53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="200dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="Mi informacion"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView29"
-        app:layout_constraintEnd_toEndOf="@+id/imageView29"
-        app:layout_constraintStart_toStartOf="@+id/imageView29"
-        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="200dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Mi informacion"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+            app:layout_constraintEnd_toEndOf="@+id/imageView29"
+            app:layout_constraintStart_toStartOf="@+id/imageView29"
+            app:layout_constraintTop_toTopOf="@+id/imageView29" />
 
-    <TextView
-        android:id="@+id/textView54"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="213dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="Mis tarjetas"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView30"
-        app:layout_constraintEnd_toEndOf="@+id/imageView30"
-        app:layout_constraintStart_toStartOf="@+id/imageView30"
-        app:layout_constraintTop_toTopOf="@+id/imageView30" />
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="213dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Mis tarjetas"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView30"
+            app:layout_constraintEnd_toEndOf="@+id/imageView30"
+            app:layout_constraintStart_toStartOf="@+id/imageView30"
+            app:layout_constraintTop_toTopOf="@+id/imageView30" />
 
-    <TextView
-        android:id="@+id/textView55"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="236dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="Opciones"
-        android:textColor="#050202"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView31"
-        app:layout_constraintEnd_toEndOf="@+id/imageView31"
-        app:layout_constraintStart_toStartOf="@+id/imageView31"
-        app:layout_constraintTop_toTopOf="@+id/imageView31" />
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="236dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Opciones"
+            android:textColor="#050202"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+            app:layout_constraintEnd_toEndOf="@+id/imageView31"
+            app:layout_constraintStart_toStartOf="@+id/imageView31"
+            app:layout_constraintTop_toTopOf="@+id/imageView31" />
 
-    <TextView
-        android:id="@+id/textView56"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="186dp"
-        android:fontFamily="@font/jua_regular"
-        android:text="Centro de ayuda"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView32"
-        app:layout_constraintEnd_toEndOf="@+id/imageView32"
-        app:layout_constraintStart_toStartOf="@+id/imageView32"
-        app:layout_constraintTop_toTopOf="@+id/imageView32" />
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="186dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Centro de ayuda"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView32"
+            app:layout_constraintEnd_toEndOf="@+id/imageView32"
+            app:layout_constraintStart_toStartOf="@+id/imageView32"
+            app:layout_constraintTop_toTopOf="@+id/imageView32" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

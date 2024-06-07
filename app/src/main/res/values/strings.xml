@@ -42,4 +42,5 @@
     <string name="send_icon">send_icon</string>
     <string name="recepcion_icon">request_icon</string>
     <string name="inicio">Inicio</string>
+    <string name="nombreusuario">nombreusuario!</string>
 </resources>
