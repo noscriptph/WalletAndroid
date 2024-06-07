@@ -102,18 +102,16 @@ class LoginPage : Fragment() {
     }
     /*Se comento este codigo ya que estaba demas y generaba que algunos fragment no se cargaran con
     el findnavcontroller, Javier Alcantara me ayudo en esto
-     */
+
        /**
         * Método para cargar un nuevo fragmento.
         * @param fragmento El fragmento a cargar.
         */
-
-
-           private fun cargarFragmento(fragmento: Fragment) {
-               val fragmentManager = requireActivity().supportFragmentManager
-               val fragmentTransaction = fragmentManager.beginTransaction()
-               fragmentTransaction.replace(R.id.fragment_container_view, fragmento)
-               fragmentTransaction.addToBackStack(null)
-               fragmentTransaction.commit()
-           } */
+        private fun cargarFragmento(fragmento: Fragment) {
+            val fragmentManager = requireActivity().supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.fragment_container_view, fragmento)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+        } */
 }
