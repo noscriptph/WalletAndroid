@@ -8,6 +8,19 @@
     android:background="@drawable/background_request_money"
     tools:context=".vista.fragments.RequestMoney">
 
+    <ListView
+        android:layout_width="345dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:autofillHints="Destinatario"
+        app:layout_constraintBottom_toTopOf="@+id/textView46"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
 
     <ImageView
         android:id="@+id/imageView25"
@@ -28,12 +41,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="15dp"
+        android:layout_marginBottom="40dp"
         android:src="@drawable/rectangle2"
+        app:layout_constraintBottom_toTopOf="@+id/imageView25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView47"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
@@ -41,12 +54,12 @@
         android:layout_width="345dp"
         android:layout_height="56dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="247dp"
         android:layout_marginEnd="15dp"
+        android:layout_marginBottom="40dp"
         android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/imageView23"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -115,20 +128,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="15dp"
         android:fontFamily="@font/jua_regular"
         android:text="@string/cantidad_a_ingresa"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView47"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
         android:fontFamily="@font/jua_regular"
         android:text="@string/notas_de_transferencia"
+        app:layout_constraintBottom_toTopOf="@+id/imageView23"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView22" />
 

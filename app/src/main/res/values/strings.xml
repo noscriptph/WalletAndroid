@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">WalletAndroid</string>
     <string name="textview">TextView</string>
-    <string name="appName">AlkeWallet</string>
-    <string name="alkewallet">Alkewallet</string>
+    <string name="appName" translatable="false">AlkeWallet</string>
+    <string name="alkewallet" translatable="false">Alkewallet</string>
     <string name="banner_login_page1">Loguea y empeza a</string>
     <string name="banner_login_page2">transferir!</string>
     <string name="texto_cuadro_solicitud_email">Email</string>
@@ -35,8 +35,8 @@
     <string name="cantidad_a_ingresa">Cantidad a ingresa</string>
     <string name="notas_de_transferencia">Notas de transferencia</string>
     <string name="agregar_notas_de_transferencia_opcional">Agregar notas de transferencia(opcional)</string>
-    <string name="_20_00">20.00</string>
-    <string name="_124_57">$124.57</string>
+    <string name="_20_00" translatable="false">20.00</string>
+    <string name="_124_57" translatable="false">$124.57</string>
     <string name="enviar_dinero">Enviar Dinero</string>
     <string name="profile_picture">profile</string>
     <string name="send_icon">send_icon</string>
