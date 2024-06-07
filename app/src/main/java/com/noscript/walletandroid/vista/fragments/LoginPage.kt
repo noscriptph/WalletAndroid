@@ -61,14 +61,17 @@ class LoginPage : Fragment() {
                 usuarioGuardado.sesionIniciada = true
                 Usuario.guardarUsuario(requireContext(), usuarioGuardado)
                 usuarioViewModel.usuario.value = usuarioGuardado
+                findNavController().navigate(R.id.action_loginPage_to_homePage)
                 Toast.makeText(
                     requireContext(), "Sesión iniciada correctamente", Toast.LENGTH_SHORT
                 ).show()
                 // Cargar el fragmento de HomePage
-                cargarFragmento(HomePage())
+                //cargarFragmento(HomePage())
             } else {
                 Toast.makeText(
-                    requireContext(), "Los datos son incorrectos, inténtalo nuevamente", Toast.LENGTH_SHORT
+                    requireContext(),
+                    "Los datos son incorrectos, inténtalo nuevamente",
+                    Toast.LENGTH_SHORT
                 ).show()
             }
         }
@@ -97,16 +100,20 @@ class LoginPage : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
-    /**
-     * Método para cargar un nuevo fragmento.
-     * @param fragmento El fragmento a cargar.
+    /*Se comento este codigo ya que estaba demas y generaba que algunos fragment no se cargaran con
+    el findnavcontroller, Javier Alcantara me ayudo en esto
      */
-    private fun cargarFragmento(fragmento: Fragment) {
-        val fragmentManager = requireActivity().supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragment_container_view, fragmento)
-        fragmentTransaction.addToBackStack(null)
-        fragmentTransaction.commit()
-    }
+       /**
+        * Método para cargar un nuevo fragmento.
+        * @param fragmento El fragmento a cargar.
+        */
+
+
+           private fun cargarFragmento(fragmento: Fragment) {
+               val fragmentManager = requireActivity().supportFragmentManager
+               val fragmentTransaction = fragmentManager.beginTransaction()
+               fragmentTransaction.replace(R.id.fragment_container_view, fragmento)
+               fragmentTransaction.addToBackStack(null)
+               fragmentTransaction.commit()
+           } */
 }
