@@ -45,10 +45,17 @@ class HomePage : Fragment() {
             binding.textView21.text = usuario.nombre
             binding.textView23.text = String.format("$%.2f", usuario.montoDinero)
         }
-
+        // Configurar OnClickListener para imageView6 para abrir fragment de perfil
+        binding.imageView6.setOnClickListener {
+            findNavController().navigate(R.id.action_homePage_to_profilePage)
+        }
         // Configurar OnClickListener para imageView8 para abrir fragment de envio de dinero
         binding.imageView8.setOnClickListener {
             findNavController().navigate(R.id.action_homePage_to_sendMoney)
+        }
+        // Configurar OnClickListener para imageView9 para abrir fragment de peticion de dinero
+        binding.imageView9.setOnClickListener {
+            findNavController().navigate(R.id.action_homePage_to_requestMoney)
         }
     }
 
