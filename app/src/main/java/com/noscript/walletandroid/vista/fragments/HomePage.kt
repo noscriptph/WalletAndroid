@@ -14,21 +14,21 @@ import com.noscript.walletandroid.databinding.FragmentHomePageBinding
 import com.noscript.walletandroid.vistaModelo.UsuarioViewModel
 import com.noscript.walletandroid.vistaModelo.transacciones as listaTransacciones
 
-
 /**
  * Fragmento para la página de inicio.
  */
 class HomePage : Fragment() {
 
-    private lateinit var binding: FragmentHomePageBinding
+    private var _binding: FragmentHomePageBinding? = null
+    private val binding get() = _binding!!
     private lateinit var usuarioViewModel: UsuarioViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentHomePageBinding.inflate(inflater, container, false)
-        return binding.root
+    ): View? {
+        _binding = FragmentHomePageBinding.inflate(inflater, container, false)
+        return _binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -86,4 +86,8 @@ class HomePage : Fragment() {
         }
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
