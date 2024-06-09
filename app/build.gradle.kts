@@ -39,10 +39,27 @@ android {
 }
 
 dependencies {
+
+    //ksp
+    implementation(libs.symbol.processing.api)
+
+    //retrofit2
+    implementation(libs.retrofit)
+
+    //picaso
+    implementation(libs.picasso)
+
+    //moshi
     implementation(libs.moshi.kotlin)
-    implementation (libs.retrofit)
-    implementation (libs.navigation.fragment.ktx)
-    implementation (libs.navigation.ui.ktx)
+
+    // ViewModel
+    implementation(libs.lifecycle.viewmodel)
+
+    // LiveData
+    implementation(libs.lifecycle.livedata)
+
+    implementation(libs.navigation.fragment.ktx)
+    implementation(libs.navigation.ui.ktx)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
     implementation(libs.appcompat)
